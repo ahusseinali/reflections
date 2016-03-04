@@ -1,0 +1,8 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+
+A: Initializing a repository creates a hidden .git directory that stores the history of my changes. It is needed to convert a normal directory into a git repository and to be able to use git commands inside the directory.
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A: Staging area is a temporary place where you add the changes that you want to include into the next commit. This is different from working directory because working directory contains all the files in the most recent state while staging area could only contain a subset of these files. It is also different from repository as repository contains all the previous commits. It doesn't keep record of uncommitted changes.
+This helps with splitting multiple changes into different logical commits instead of forcing all of them into a single commit.
