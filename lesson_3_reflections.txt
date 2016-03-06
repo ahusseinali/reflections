@@ -1,29 +1,42 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    When I want to share my work with others, Either for viewing my work or collaborating with me on the project. It also helps to keep a backup of my work on a remote server in case my machine crashed, so I don't lose my work.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    I might want to pull an older version of the repository.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Fork: GitHub specific operation that allows to clone a remote repository to another remote repository and provides linking feature to the original repository.
+    Clone: Git operation that allows copying a remote or local repository to another local repository. Unlike fork, it doesn't copy to a remote repository.
+    Branch: Git operation that allows keeping a version of the same repository where I can commit my changes without affecting the master branch. With branching I can have multiple unrelated changes have their own commit history in the same repository. Later I can merge these branches into the master branch or get rid of them.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    This helps with figuring out the state of my master compared to the remote master. This way if I fetch the new changes from remote master, I can see how my master branch compares to the remote master branch. Is it ahead (needs pushing), behind (needs pulling), or totally out of sync and needs merging.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Collaboration would be through emailing zip files between one another, while keeping one master version at a single place.
+    Easier:
+        1- less required tools
+        2- less required setup steps
+    Harder:
+        1- Keeping track of different versions will be harder specially if multiple people are working on different versions.
+        2- Merging to master version will much harder
+        3- Keeping track of change history is impossible.
+        4- Reviewing a change before it gets merged will be harder. as we need to compare file by file with master version.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Benefits of using separate branch:
+    Using a separate branch is useful to coordinate a review on your changes before they get merged to the remote master branch to make sure they are working fine. It also helps when your changes would cause conflicts with other updates that happened to the remote master branch so it gives you and your reviewers a chance to see how you resolve these conflicts before merging the changes.
+    Benefits of pushing directly to master:
+    It speeds up the merging and updating master process. It reduces the steps needed to perform a push.
